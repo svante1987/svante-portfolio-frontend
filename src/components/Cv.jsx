@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ListItemLink from "./ListItemLink";
-// import useClickOutside from "../customHooks/ClickOutside";
+import useClickOutside from "../customHooks/ClickOutside";
 
 //STYLES
 import styles from "../styles/Cv.module.scss";
@@ -13,14 +13,13 @@ import {
   FaTimes,
   FaBars,
 } from "react-icons/fa";
-import avatar from "../assets/Avatar.png";
 import bild from "../assets/bild.jpg"
 
 const Cv = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-//   const domNode = useClickOutside(() => {
-//     setIsNavOpen(false);
-//   });
+  const domNode = useClickOutside(() => {
+    setIsNavOpen(false);
+  });
 
   return (
     <div className={styles.container}>
@@ -35,7 +34,7 @@ const Cv = () => {
       {/* CONTENT */}
       <div
         className={`${styles.content} ${isNavOpen ? styles.active : undefined}`}
-        // ref={domNode}
+        ref={domNode}
       >
         {/* CLOSE BURGER */}
         <div

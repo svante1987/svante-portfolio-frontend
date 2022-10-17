@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 *{
     margin:0;
@@ -14,14 +14,14 @@ body{
     overflow: hidden;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    background: var(--black);
+    background: var(--background-blue);
 }
 
 .App{
     display: flex;
     overflow: hidden;
     height: 100vh;
-    background: var(--black);
+    background: var(--background-blue);
 }
 
 ::-webkit-scrollbar{
@@ -60,6 +60,13 @@ body{
 
     --white: rgb(238, 238, 238);
     --text-color: rgb(213, 213, 213);
+
+
+    --background-blue: rgb(60, 76, 97);
+    --some-blue: #555C63;
+    --liver-dogs: #6D6C65;
+    --kobe: #7A7466;
+    --black-chocolate: #867C67;
 }
 
 @media screen and (max-width:1200px){
