@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <PageContainer classOption={styles.home}>
         <h1>Svante Pålsson</h1>
-        <h3>Fullstack Developer</h3>
+        <h3>Full stack Developer</h3>
     </PageContainer>
   )
 }
